@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Family of Slush - Personal Contributions</title>
+
+    <link href="hci-project.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas%20Neue"
+      rel="stylesheet"
+    />
+
+    <style>
+      h1 {
+        font-family: "Bebas Neue";
+        font-size: clamp(2.5rem, 9vw, 95px);
+        text-align: center;
+        color: rgb(26, 26, 27);
+      }
+
+      /* Page content */
+      .contributions {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .contribution-section {
+        margin: 60px 0;
+      }
+
+      .contribution-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .contribution-section h3 {
+        font-size: 1.4rem;
+        margin-top: 30px;
+      }
+
+      .contribution-section p {
+        line-height: 1.7;
+        max-width: 850px;
+      }
+
+      /* Image galleries */
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 15px;
+        margin: 25px 0;
+      }
+
+      .image-gallery.two-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .image-gallery figure {
+        margin: 0;
+      }
+
+      .image-gallery img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .image-gallery figcaption {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .image-placeholder {
+        min-height: 180px;
+        padding: 15px;
+        border: 2px dashed #888;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Individual design details */
+      .design-details {
+        margin: 25px 0;
+      }
+
+      .design-details ul {
+        line-height: 1.8;
+        padding-left: 25px;
+      }
+
+      .section-divider {
+        margin: 50px 0;
+        border: 0;
+        border-top: 2px dashed #888;
+      }
+
+      @media (max-width: 700px) {
+        .image-gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .image-gallery.two-columns {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .image-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Family of Slush - Personal Contributions</h1>
+
+    <main class="contributions">
+
+      <!-- Introduction -->
+      <section class="contribution-section">
+        <h2>My Contributions</h2>
+
+        <p>
+          Please note that this page would also ideally get a makeover. 
+        </p>
+        <p>
+          Throughout the Family of Slush project, I contributed to the initial
+          ideation, visual design, and implementation of several interactive
+          elements. My work included sketching ideas for the overall
+          experience, proposing a hand-drawn visual direction, designing my
+          individual fruit button, and developing visual elements that
+          communicate the user's slush mixture.
+        </p>
+
+        <p>
+          The following sections highlight my contributions, the design
+          decisions behind them, and how my initial ideas evolved into the
+          final implementation.
+        </p>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Section 1: General project ideation -->
+      <section class="contribution-section">
+        <h2>01. Early Ideation and Project Concept</h2>
+
+        <p>
+          I created a series of initial sketches to explore how the different
+          interactions could work together to form a cohesive experience.
+          These sketches helped communicate the overall concept and explore
+          possible layouts for the interface.
+        </p>
+
+        <p>
+          The proposed interaction involved selecting different flavours,
+          pouring them into a cup, and gradually filling the cup with a
+          mixture of slush. The final result would respond to the proportions
+          of the selected flavours, with different outcomes depending on
+          whether the mixture was balanced or dominated by a particular
+          flavour. The flavours could also be represented as positive or
+          negative qualities.
+        </p>
+
+        <p>
+          My sketches explored both the arrangement of the interface and
+          the relationship between each button and its corresponding
+          interaction.
+        </p>
+
+        <h3>Initial Sketches</h3>
+
+        <div class="image-gallery">
+
+          <figure>
+            <img src="images/ideation-sketch-1.png"
+                 alt="First early project ideation sketch" />
+            <figcaption>
+              Sketch 1: Exploring the overall interface and interaction.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/ideation-sketch-2.png"
+                 alt="Second early project ideation sketch" />
+            <figcaption>
+              Sketch 2: Exploring the layout and flavour selection.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/ideation-sketch-3.png"
+                 alt="Third early project ideation sketch" />
+            <figcaption>
+              Sketch 3: Exploring the pouring interaction and cup.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/ideation-sketch-4.png"
+                 alt="Fourth early project ideation sketch" />
+            <figcaption>
+              Sketch 4: Exploring the final mixture and result.
+            </figcaption>
+          </figure>
+
+        </div>
+<!-- 
+        <h3>Establishing the Visual Direction</h3>
+
+        <p>
+          I also proposed giving the interface a childlike, hand-drawn
+          appearance. Rather than using a conventional, polished interface,
+          I envisioned a design that resembled a drawing on grid paper,
+          with hand-drawn components that retained a slightly imperfect
+          appearance.
+        </p> -->
+<!-- 
+        <p>
+          This direction was intended to give the project a playful,
+          approachable personality. The group agreed with this direction,
+          which helped establish a consistent visual style for the
+          interface and its components.
+        </p> -->
+
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Section 2: Personal fruit button -->
+      <section class="contribution-section">
+        <h2>02. Individual Button Design: Watermelon Blast</h2>
+
+        <p>
+          My individual button, Watermelon Blast, was designed to represent
+          aspects of my personality through the visual characteristics
+          of a watermelon.
+        </p>
+
+        <p>
+          Initially, I considered using other fruits, including an orange
+          or a honeydew melon. After brainstorming different fruit
+          characteristics, I decided that watermelon offered the most
+          interesting connections to my personality and my Individual
+          Typology Personality (ITP) Metric Survey results.
+        </p>
+
+        <p>
+          I explored these connections through the fruit's appearance,
+          taste, texture, and other characteristics. The resulting design
+          combined hand-drawn elements and cut-out-style stickers to
+          communicate these qualities while remaining visually cohesive.
+        </p>
+
+        <h3>From Sketches to Design</h3>
+
+        <p>
+          I created four sketches to explore how the watermelon could
+          be represented as an interactive button. These iterations
+          helped me consider the button's shape, colours, typography,
+          decorative elements, and interactive states.
+        </p>
+
+        <div class="image-gallery">
+
+          <figure>
+            <img src="images/watermelon-sketch-1.png"
+                 alt="First Watermelon Blast button sketch" />
+            <figcaption>Sketch 1: Initial visual exploration.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/watermelon-sketch-2.png"
+                 alt="Second Watermelon Blast button sketch" />
+            <figcaption>Sketch 2: Exploring watermelon characteristics.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/watermelon-sketch-3.png"
+                 alt="Third Watermelon Blast button sketch" />
+            <figcaption>Sketch 3: Developing the button's visual details.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/watermelon-sketch-4.png"
+                 alt="Fourth Watermelon Blast button sketch" />
+            <figcaption>Sketch 4: Refining the final design.</figcaption>
+          </figure>
+
+        </div>
+
+        <h3>Final Button Design</h3>
+
+        <p>
+          For the final design, I incorporated several interactive details
+          to bring the button to life. These included moving stickers,
+          animated exclamation marks, and seeds that dance when the user
+          hovers over the button.
+        </p>
+
+        <p>
+          The mixed-media appearance was intentional. I wanted the design
+          to feel slightly unrefined and unconventional while still
+          coming together as a cohesive component. I also incorporated
+          a hand-drawn font that reflects my own drawing style.
+        </p>
+
+        <div class="image-gallery two-columns">
+
+          <figure>
+            <img src="images/MelonBlast.png"
+                 alt="Watermelon Blast button in its initial state" />
+            <figcaption>
+              Figure 1: Watermelon Blast in its initial state.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/MelonBlast2.png"
+                 alt="Watermelon Blast button in its hovered or selected state" />
+            <figcaption>
+              Figure 2: Watermelon Blast with its interactive hover effects.
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <h3>Connecting Design to Personality</h3>
+
+        <p>
+          The design was also an opportunity to translate personal
+          characteristics into visual elements. I used the watermelon
+          as a metaphor rather than relying solely on text to communicate
+          personality.
+        </p>
+
+        <div class="design-details">
+          <ul>
+            <li>
+              <strong>Sweet and refreshing taste:</strong>
+              Connected to my relatively higher extraversion score
+              compared with my group members, as well as my optimism
+              and thoughtfulness.
+            </li>
+
+            <li>
+              <strong>Mild, balanced flavour:</strong>
+              Represented my comparatively lower assertiveness score.
+            </li>
+
+            <li>
+              <strong>Bright red interior and seeds:</strong>
+              Represented how I can surprise people with my work or
+              ideas, even when I am not particularly assertive.
+            </li>
+
+            <li>
+              <strong>High water content:</strong>
+              Watermelon is approximately 92% water. I connected this
+              characteristic to my tendency to go with the flow and
+              remain calm in stressful situations.
+            </li>
+
+            <li>
+              <strong>Irregular exterior:</strong>
+              The watermelon-inspired border represented my occasional
+              hesitation when starting new tasks and my slightly
+              unorganized personality.
+            </li>
+
+            <li>
+              <strong>Mixed-media appearance:</strong>
+              The combination of drawings and sticker-like elements
+              reflected a laid-back, unconventional style that can
+              still come together as a cohesive whole.
+            </li>
+
+            <li>
+              <strong>Hand-drawn typography:</strong>
+              I used a lettering style similar to the way I naturally
+              draw, making the button feel more personal.
+            </li>
+
+            <li>
+              <strong>Smiling seeds:</strong>
+              The playful faces revealed on hover reflected my
+              tendency to joke around.
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Section 3: Juice cup -->
+      <section class="contribution-section">
+        <h2>03. Juice Cup and Visual Design</h2>
+
+        <p>
+          In addition to my individual button, I worked on visual elements
+          that helped communicate the user's interaction with the
+          application. These included the juice cup, the notepad used
+          to display descriptions, and the visual representation of the
+          final juice mixture.
+        </p>
+
+        <h3>Juice Cup Design</h3>
+
+        <p>
+          The cup serves as a visual container for the selected flavours,
+          helping users understand how their choices combine to create
+          a final mixture.
+        </p>
+
+        <div class="image-gallery two-columns">
+
+          <figure>
+            <img src="images/juice-cup-sketch.png"
+                 alt="Initial sketch of the juice cup" />
+            <figcaption>
+              Initial concept for the juice cup.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/juice-cup-final.png"
+                 alt="Final juice cup design" />
+            <figcaption>
+              Final juice cup design.
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <h3>Notepad and Descriptions</h3>
+
+        <p>
+          I also contributed to the notepad design used to present
+          descriptions within the interface. This element was intended
+          to complement the hand-drawn visual direction while giving
+          the descriptive content a distinct place on the screen.
+        </p>
+
+        <div class="image-gallery two-columns">
+
+          <figure>
+            <img src="images/notepad-sketch.png"
+                 alt="Initial sketch of the notepad component" />
+            <figcaption>
+              Initial notepad concept.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/notepad-final.png"
+                 alt="Final notepad component" />
+            <figcaption>
+              Final notepad design.
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <p>
+          The description logic also connected each group member's
+          contributions to the information displayed in the application.
+          This helped link the individual fruit designs to the broader
+          experience.
+        </p>
+
+        <!-- Add the relevant GitHub link or code reference here. -->
+
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Section 4: Juice layer implementation -->
+      <section class="contribution-section">
+        <h2>04. Implementing the Juice Layers</h2>
+
+        <p>
+          One of my implementation tasks involved developing the visual
+          representation of the juice mixture inside the cup. I explored
+          how to represent pouring and the accumulation of different
+          flavours in a way that would fit the project's visual style.
+        </p>
+
+        <h3>Initial Prototype</h3>
+
+        <p>
+          I first created a prototype to validate the pouring concept.
+          This allowed me to explore how the juice could be represented
+          visually before developing a version that better matched the
+          overall interface.
+        </p>
+
+        <figure>
+          <img src="images/juice-pouring-prototype.png"
+               alt="Initial prototype exploring the juice pouring concept"
+               style="max-width: 700px; width: 100%; height: auto;" />
+          <figcaption>
+            Initial prototype used to explore the pouring interaction.
+          </figcaption>
+        </figure>
+
+        <h3>Refining the Juice Layers</h3>
+
+        <p>
+          After the initial prototype, I developed a more tailored
+          representation of the juice layers. I used Microsoft Paint
+          to draw the individual layers so that their shapes would fit
+          neatly inside the cup.
+        </p>
+
+        <p>
+          This required multiple iterations of drawing and refinement.
+          Rather than relying on generic shapes, I adjusted the artwork
+          to better match the proportions of the cup and maintain the
+          hand-drawn appearance of the interface.
+        </p>
+
+        <figure>
+          <img src="images/juice-layers-final.png"
+               alt="Final artwork for the layered juice mixture"
+               style="max-width: 700px; width: 100%; height: auto;" />
+          <figcaption>
+            Refined juice-layer artwork created to fit the cup.
+          </figcaption>
+        </figure>
+
+        <h3>Connecting the Artwork to the Interaction</h3>
+
+        <p>
+          The visual artwork was only one part of the implementation.
+          The corresponding code determines how the layers are used
+          to represent the mixture as the user interacts with the
+          application.
+        </p>
+
+        <p>
+          By iterating on both the artwork and its implementation,
+          I worked toward a representation that fit the cup while
+          supporting the intended pouring interaction.
+        </p>
+
+        <!-- Add the relevant source code, GitHub link, or implementation
+             screenshots here. -->
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2 style="font-size: 15px">©Batool</h2>
+    </div>
+
+  </body>
+</html>
